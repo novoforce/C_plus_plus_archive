@@ -1,16 +1,8 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <iostream>
 
 using namespace std;
 
-int print_pairs(int * arr,int n)
+void print_pairs(int * arr,int n)
 {
     cout<<"THE PAIRS ARE: \n";
     for(int i=0;i<n;i++)
