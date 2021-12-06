@@ -7,7 +7,9 @@ int power(int no, int pow){
     if(pow == 0){
         return 1;
     }
+    //assumption
     int smallno= power(no,pow-1);
+    //calculation
     return no*smallno;
 }
 

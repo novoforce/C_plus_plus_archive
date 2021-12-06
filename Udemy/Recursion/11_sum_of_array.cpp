@@ -8,7 +8,12 @@ int sum_of_array_1(int arr[], int n){
     if(n == 0){
         return 0;
     }
-    return arr[0] + sum_of_array_1(arr+1,n-1);
+    //assumption
+    int smallAns= sum_of_array_1(arr+1,n-1);
+    cout << arr+1<< endl;
+
+    //calculation
+    return arr[0] + smallAns;
 }
 
 int sum_of_array_2(int arr[], int n){
@@ -24,7 +29,7 @@ int sum_of_array_2(int arr[], int n){
 
 
 int main(){
-    int arr[] = {1,2,3,4,5};
+    int arr[] = {1,8,3,0};
     int n = sizeof(arr)/sizeof(arr[0]);
 
     cout << "The sum of arrays:> " << sum_of_array_1(arr,n) << endl;
