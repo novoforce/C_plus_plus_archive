@@ -10,7 +10,7 @@ int sum_of_array_1(int arr[], int n){
     }
     //assumption
     int smallAns= sum_of_array_1(arr+1,n-1);
-    cout << arr+1<< endl;
+    // cout << arr+1<< endl;
 
     //calculation
     return arr[0] + smallAns;
